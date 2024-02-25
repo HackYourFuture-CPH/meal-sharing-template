@@ -1,6 +1,6 @@
-const express = require("express");
-const router = express.Router();
-const knex = require("../database");
+import { Router } from "express";
+const router = Router();
+import knex from "../database.js";
 
 router.get("/", async (request, response) => {
   try {
@@ -12,4 +12,4 @@ router.get("/", async (request, response) => {
   }
 });
 
-module.exports = router;
+export default router;
