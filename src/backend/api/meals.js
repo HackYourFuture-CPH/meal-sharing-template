@@ -1,5 +1,5 @@
-import { Router } from "express";
-const router = Router();
+import express from "express";
+const router = express.Router();
 import knex from "../database.js";
 
 router.get("/", async (request, response) => {

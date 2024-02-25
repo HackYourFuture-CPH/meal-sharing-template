@@ -1,6 +1,5 @@
 import knex from 'knex'
-import 'dotnnet/config';
-
+import 'dotenv/config';
 
 // create connection
 const myKnex = knex({
