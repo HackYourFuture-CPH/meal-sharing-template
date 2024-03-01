@@ -1,12 +1,18 @@
-const express = require("express");
+import express from "express";
+import path from "path";
+import mealsRouter from "./api/meals.js";
+import cors from "cors";
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
 const app = express();
 const router = express.Router();
-const path = require("path");
 
-const mealsRouter = require("./api/meals");
 const buildPath = path.join(__dirname, "../../dist");
-const port = process.env.PORT || 3000;
-const cors = require("cors");
 
 // For week4 no need to look into this!
 // Serve the built client html
@@ -32,4 +38,4 @@ app.use("*", (req, res) => {
   res.sendFile(path.join(`${buildPath}/index.html`));
 });
 
-module.exports = app;
+export default app;
