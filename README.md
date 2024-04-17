@@ -1,3 +1,6 @@
+# ⚠️ DEPRECATED in favour of [hyf-project-template](https://github.com/HackYourFuture-CPH/hyf-project-template)
+
+
 <p align="center">
   <a href="" rel="noopener">
  <img width=200px height=200px src="https://www.hackyourfuture.dk/static/logo-dark.svg" alt="Project logo"></a>
